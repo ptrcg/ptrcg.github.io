@@ -9,6 +9,48 @@ body {
     color: #000000;
 }
 
+@media (max-width: 768px) {
+    .about {
+        flex-direction: column;
+        align-items: center; 
+        padding: 30px 5%; 
+    }
+
+    .about-img {
+        margin-bottom: 20px;
+    }
+
+    .home {
+        flex-direction: column; 
+        align-items: center;
+        padding: 30px 5%;
+    }
+
+    .home-content {
+        text-align: center; 
+    }
+
+    .projects {
+        padding: 30px 5%; 
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .skills {
+        padding: 30px 5%; 
+    }
+
+    .skills-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        padding: 30px 5%; 
+    }
+}
+
 .absolute {
     position: fixed; 
     top: 50%; 
@@ -185,7 +227,7 @@ html {
     gap: 50px;
 }
 .image img {
-    width: 100%; 
+    width: 80%; 
     height: auto;
     border-radius: 50%;
     opacity: 0;
@@ -351,16 +393,15 @@ html {
     text-align: center;
     transition: transform 0.3s ease;
     max-width: 300px; 
-    margin: 0 auto; /* Center the cards */
-    backdrop-filter: blur(10px); /* Adds the glassy blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    border: 1px solid rgba(255, 255, 255, 0.3); /* Optional subtle border for added glass effect */
+    margin: 0 auto; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border: 1px solid rgba(255, 255, 255, 0.3); 
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
     opacity: 0;
 }
 
-/* Apply staggered delays to each card */
 .project-card:nth-child(1) {
     animation-delay: 0.5s;
 }
@@ -449,17 +490,44 @@ html {
     opacity: 0;
 }
 
+.skills-category h3 {
+    margin: 0; 
+    text-align: center; 
+}
 .skills-content {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
-    gap: 20px; /* Adjust the gap between items */
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 20px; 
 
 }
 
-/* Ensure the heading is centered and spans across all columns */
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; 
+}
+
+.skill-item {
+    text-align: center; 
+}
+
+.skill-item img {
+    width: 80px; 
+    height: 80px; 
+    object-fit: contain; 
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.skill-item p {
+    margin-top: 8px; 
+    font-size: 14px; 
+    color: #333; 
+}
+
 .skills h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
@@ -584,6 +652,6 @@ html {
     text-decoration: none;
 }
 
-.contact-info a:hover {
+.contact-info p a:hover {
     text-decoration: underline;
 }
