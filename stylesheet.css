@@ -190,6 +190,7 @@ html {
     border-radius: 50%;
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
+    opacity: 0;
 }
 .home-content {
     max-width: 600px;
