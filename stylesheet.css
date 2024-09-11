@@ -10,20 +10,20 @@ body {
 }
 
 .absolute {
-    position: fixed; /* Make it fixed so it stays in place while scrolling */
-    top: 50%; /* Position vertically in the middle */
-    left: 50%; /* Center horizontally */
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
     justify-content: center;
     display: inline-flex;
     flex-direction: row;
-    transform: translate(-50%, -50%); /* Ensure proper centering */
-    z-index: -1; /* Stay behind content */
+    transform: translate(-50%, -50%); 
+    z-index: -1; 
 }
 .bg-shape1, .bg-shape2 {
     border-radius: 50%;
     filter: blur(90px);
     opacity: 0.5;
-    z-index: -1; /* Ensure the shapes stay behind other elements */
+    z-index: -1; 
 }
 
 .justify-center {
@@ -55,8 +55,8 @@ body {
 }
 
 .about-img img {
-    width: 100%; 
-    height: 100%;
+    width: 80%; 
+    height: 80%;
     border-radius: 50%;
     animation: slideBottom 1s ease forwards;
     animation-delay: 1s;
@@ -185,9 +185,11 @@ html {
     gap: 50px;
 }
 .image img {
-    width: 100%; 
+    width: 80%; 
     height: auto;
     border-radius: 50%;
+    animation: slideBottom 1s ease forwards;
+    animation-delay: .7s;
 }
 .home-content {
     max-width: 600px;
@@ -357,7 +359,6 @@ html {
     opacity: 0;
 }
 
-/* Apply staggered delays to each card */
 .project-card:nth-child(1) {
     animation-delay: 0.5s;
 }
@@ -380,9 +381,6 @@ html {
     animation-delay: 3s;
 }
 
-/* Continue as needed for more cards */
-
-
 
 .project-card img {
     width: 100%;
@@ -394,14 +392,14 @@ html {
     padding: 5px 10px;
     margin-top: 10px;
     border: 1px solid black;
-    border-radius: 20px; /* Makes the border round */
+    border-radius: 20px;
     color: black;
     font-size: 14px;
     font-weight: 500;
 }
 
 .project-card h3 {
-    font-size: 20px; /* Reduce the font size for thinner cards */
+    font-size: 20px; 
     margin-top: 15px;
     font-weight: 600;
 }
@@ -428,7 +426,7 @@ html {
     letter-spacing: 1px;
     text-decoration: none;
     font-weight: 400;
-    margin-top: 15px; /* Space above the button */
+    margin-top: 15px;
     transition: background 0.3s ease, color 0.3s ease;
 }
 
@@ -437,9 +435,9 @@ html {
     color: black;
 }
 
-/* Styles for Skills Section */
+
 .skills {
-    padding: 50px 10%; /* Add space from the edges of the page */
+    padding: 50px 10%;
     color: #333;
     animation: slideTop 1s ease forwards;
     animation-delay: .7s;
@@ -450,53 +448,50 @@ html {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* 2 columns */
-    grid-template-rows: repeat(2, auto); /* 2 rows */
-    gap: 20px; /* Adjust the gap between items */
+    grid-template-columns: repeat(2, 1fr); 
+    grid-template-rows: repeat(2, auto); 
+    gap: 20px; 
 
 }
 
-/* Ensure the heading is centered and spans across all columns */
 .skills h2 {
     font-size: 2.5em;
     margin-bottom: 20px;
     text-align: center;
     color: black;
-    grid-column: 1 / -1; /* Make sure heading spans across all columns */
+    grid-column: 1 / -1; 
 }
 
-/* Adjust styles for skills categories */
 .skills-category {
     padding: 15px;
     border-radius: 10px;
-    background: rgba(255, 255, 255, 0.2); /* Translucent background for glassy effect */
-    backdrop-filter: blur(10px); /* Glassy blur effect */
-    -webkit-backdrop-filter: blur(10px); /* For Safari support */
-    color: #000000; /* Text color */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow */
+    background: rgba(255, 255, 255, 0.2); 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    color: #000000; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
     animation: slideBottom 1s ease forwards;
     animation-delay: .7s;
     opacity: 0;
 }
 
-/* Ensure proper placement of items in a 2x2 grid */
 .skills-category:nth-child(0) {
-    grid-column: 1 / 2; /* Place in the first column of the first row */
+    grid-column: 1 / 2;
     animation-delay: 0.5s;
 }
 
 .skills-category:nth-child(1) {
-    grid-column: 2 / 3; /* Place in the second column of the first row */
+    grid-column: 2 / 3; 
     animation-delay: 1s;
 }
 
 .skills-category:nth-child(2) {
-    grid-column: 1 / 2; /* Place in the first column of the second row */
+    grid-column: 1 / 2; 
     animation-delay: 1.5s;
 }
 
 .skills-category:nth-child(3) {
-    grid-column: 2 / 3; /* Place in the second column of the second row */
+    grid-column: 2 / 3; 
     animation-delay: 2s;
 }
 
@@ -512,7 +507,7 @@ html {
     color: #555;
     margin: 0;
 }
-/* Contact Section Styles */
+
 .contact {
     padding: 50px 10%;
 }
@@ -579,8 +574,4 @@ html {
 .contact-info a {
     color: black;
     text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
 }
