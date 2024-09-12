@@ -10,7 +10,6 @@ body {
 }
 
 @media (max-width: 768px) {
-
     .navbar a {
         font-size: 16px !important;
         margin-left: 5px;
@@ -33,7 +32,7 @@ body {
     }
 
     .image img {
-        width: 150px; 
+        width: 80%;
         height: auto;
         border-radius: 50%;
     }
@@ -53,17 +52,18 @@ body {
     .about {
         flex-direction: column;
         align-items: center;
-        padding: 100px 5% 30px;
+        padding: 5% 30px;
     }
 
     .about-img {
-        margin-top: 150px;
+        margin-top:390px;
         text-align: center;
         margin-bottom: 20px;
     }
 
     .about-img img {
-        width: 150px;
+
+        width: 80%;
         height: auto;
         border-radius: 50%;
         margin-top: 20px;
@@ -79,7 +79,10 @@ body {
     }
 
     .project-grid {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr) !important; 
+        gap: 10px;
+        padding: 10px; 
     }
 
     .skills {
@@ -100,6 +103,7 @@ body {
     .contact {
         padding: 30px 5%; 
     }
+    
 }
 
 .absolute {
