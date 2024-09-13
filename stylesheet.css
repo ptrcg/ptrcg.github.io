@@ -10,10 +10,6 @@ body {
 }
 
 @media (max-width: 768px) {
-    .navbar a {
-        font-size: 16px !important;
-        margin-left: 5px;
-    }
 
     .navbar {
         padding: 10px;
