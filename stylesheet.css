@@ -11,10 +11,22 @@ body {
 
 @media (max-width: 768px) {
 
-    .navbar {
-        padding: 10px;
+    /* Add this to override any conflicting styles */
+    .navbar a {
+        font-size: 14px !important; 
+        margin: 0 !important; 
     }
-    
+
+    .navbar {
+        font-size: 12px !important;
+        display: flex;
+        gap: 15px;
+    }
+
+    .header a{
+        font-size: 14px;
+    }
+
     .image {
         margin-top: 150px;
         order: -1; 
@@ -50,13 +62,10 @@ body {
         align-items: center;
         padding: 5% 30px;
     }
-    body {
-        overflow-x: hidden;
-      }
+
     .about-img {
         margin-top:300px;
         text-align: center;
-        margin-bottom: 20px;
     }
 
     .about-img img {
@@ -64,8 +73,7 @@ body {
         width: 80%;
         height: auto;
         border-radius: 50%;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin-top: 50px;
     }
 
     .about-text {
@@ -258,6 +266,7 @@ html {
     font-weight: 500;
     margin-left: 35px;
     transition: color 0.3s;
+    
 }
 
 .navbar a.active {
@@ -551,10 +560,9 @@ html {
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-    gap: 20px; 
-
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, auto); /* 2 rows */
+    gap: 20px; /* Adjust space between items */
 }
 
 .skill-icons {
@@ -579,8 +587,8 @@ html {
     margin-top: 8px; 
     font-size: 14px; 
     color: #333; 
-    
 }
+
 
 .skills h2 {
     font-size: 2.5em;
