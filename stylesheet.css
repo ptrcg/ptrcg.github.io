@@ -566,14 +566,17 @@ html {
 }
 
 .skill-icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center; 
+    display: grid; /* Using grid to align items */
+    grid-template-columns: repeat(2, 1fr); /* 2 items per row */
+    grid-gap: 20px; /* Gap between items */
+    align-items: center; /* Align items in the center */
 }
 
 .skill-item {
-    text-align: center; 
+    display: flex;
+    flex-direction: row;  
+    gap: 10px;  
+    align-items: center; 
 }
 
 .skill-item img {
